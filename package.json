@@ -1,0 +1,23 @@
+{
+  "name": "nodework",
+  "version": "1.0.0",
+  "description": "Node Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jashment/nodeWork.git"
+  },
+  "author": "Jordan Ashment",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jashment/nodeWork/issues"
+  },
+  "homepage": "https://github.com/jashment/nodeWork#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
