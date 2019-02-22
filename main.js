@@ -32,6 +32,10 @@ app.use((req, res, next) => {
 
 app.use(errorController.get404)
 
+const port =(process.env.PORT || 3000)
+
 mongoConnect(() => {
-    app.listen(3000)
+    app.listen(port, () => {
+        console.log(`Server is up and running on ${port}`)
+    })
 })
