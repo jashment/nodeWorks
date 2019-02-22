@@ -31,12 +31,12 @@ exports.getEditProduct = (req, res, next) => {
     if (!editMode) {
         return res.redirect('/')
     }
-    const prodId = req.params.productId;
+    const prodId = req.params.productId
     Product.findById(prodId)
         // Product.findById(prodId)
         .then(product => {
             if (!product) {
-                return res.redirect('/');
+                return res.redirect('/')
             }
             res.render('admin/edit-product', {
                 pageTitle: 'Edit Animal',
